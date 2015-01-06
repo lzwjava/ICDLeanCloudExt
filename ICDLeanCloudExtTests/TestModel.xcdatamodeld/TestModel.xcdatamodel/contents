@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C81f" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DataTypeEntity" representedClassName="DataTypeEntity" syncable="YES">
+        <attribute name="array" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="boolean" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dict" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="nullv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="string" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="onetomany" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OneToManyEntity" syncable="YES"/>
+        <relationship name="onetoone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OneToOneEntity" syncable="YES"/>
+    </entity>
+    <entity name="OneToManyEntity" representedClassName="OneToManyEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OneToOneEntity" representedClassName="OneToOneEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DataTypeEntity" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="OneToManyEntity" positionX="-36" positionY="81" width="128" height="73"/>
+        <element name="OneToOneEntity" positionX="-18" positionY="81" width="128" height="73"/>
+    </elements>
+</model>
