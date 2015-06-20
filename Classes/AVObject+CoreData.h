@@ -8,7 +8,7 @@
 #import <AVObject.h>
 #import <AVRelation.h>
 #define MR_SHORTHAND 1
-#import <CoreData+MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord.h>
 
 
 @interface AVObject (CoreData)
